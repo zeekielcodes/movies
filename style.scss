@@ -259,6 +259,18 @@ footer {
     }
 }
 
+@media (max-width:1024px) {
+  nav, .subContainer, .text, .banner, .Contain, .search-movie, footer{
+    padding: 2em 4em;
+  }
+}
+
+@media (max-width:798px) {
+  nav, .subContainer, .text, .banner, .Contain, .search-movie, footer{
+    padding: 2em 3em;
+  }
+}
+
 @media (max-width:600px) {
   nav, .subContainer, .text, .banner, .Contain, .search-movie, footer{
     padding: 2em 2em;
@@ -325,7 +337,7 @@ footer {
     img {
       // width: ;
       object-fit: contain;
-      animation: animateBanner 3s 1s infinite ease-in-out;
+      animation: animateBanner 3s 0s infinite ease-in-out;
     }
   }
 
@@ -355,7 +367,7 @@ footer {
 }
 
 50% {
-  scale: 1.5;
+  scale: 1.3;
 }
 
 100% {

@@ -209,6 +209,16 @@ footer p {
   font-size: 1.3em;
 }
 
+@media (max-width: 1024px) {
+  nav, .subContainer, .text, .banner, .Contain, .search-movie, footer {
+    padding: 2em 4em;
+  }
+}
+@media (max-width: 798px) {
+  nav, .subContainer, .text, .banner, .Contain, .search-movie, footer {
+    padding: 2em 3em;
+  }
+}
 @media (max-width: 600px) {
   nav, .subContainer, .text, .banner, .Contain, .search-movie, footer {
     padding: 2em 2em;
@@ -263,8 +273,8 @@ footer p {
   .banner img {
     -o-object-fit: contain;
        object-fit: contain;
-    -webkit-animation: animateBanner 3s 1s infinite ease-in-out;
-            animation: animateBanner 3s 1s infinite ease-in-out;
+    -webkit-animation: animateBanner 3s 0s infinite ease-in-out;
+            animation: animateBanner 3s 0s infinite ease-in-out;
   }
   .movie {
     width: 70vw;
@@ -284,7 +294,7 @@ footer p {
     scale: 1;
   }
   50% {
-    scale: 1.5;
+    scale: 1.3;
   }
   100% {
     scale: 1;
@@ -295,7 +305,7 @@ footer p {
     scale: 1;
   }
   50% {
-    scale: 1.5;
+    scale: 1.3;
   }
   100% {
     scale: 1;
