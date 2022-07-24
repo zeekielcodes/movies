@@ -202,14 +202,18 @@ function GetDiscover() {
         
             
             Container.append(ShowResult);
-
-            if(SearchResults == []) {
+          
+    
+            
+            MovieSearch.append(Showing);
+            MovieSearch.append(Container)
+            }
+            
+            
+            if(SearchResults.length<1) {
                 Showing.innerHTML = `No search result for "${SearchValue}"`;
             } else {
             Showing.innerHTML = `Showing search result for "${SearchValue}"`;
-            }
-            MovieSearch.append(Showing);
-            MovieSearch.append(Container)
             }
 
            

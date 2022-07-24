@@ -140,7 +140,7 @@ padding: 1em 10em;
   overflow-x: scroll;
   scrollbar-width: none;
 
-  :-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: none;
   }
 }

@@ -110,7 +110,7 @@ nav .cta {
   overflow-x: scroll;
   scrollbar-width: none;
 }
-.container :-webkit-scrollbar {
+.container ::-webkit-scrollbar {
   display: none;
 }
 
