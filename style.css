@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --headFont: 1.5em;
+  --fontColor: white;
+}
+
+body {
+  background: #e50914;
+  font-family: fantasy;
+}
+
+footer, .banner {
+  padding: 2em 10em;
+}
+
+.search-movie, .Contain, .subContainer {
+  padding: 5em 10em;
+}
+
+nav {
+  padding: 1em 10em;
+  color: var(--fontColor);
+  background: black;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+nav img.hamburger {
+  display: none;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav div img {
+  height: 3em;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
+nav .cta {
+  padding: 0.7em 1.4em;
+  background: #e50914;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: var(--fontColor);
+  border-radius: 5em;
+}
+
+.banner {
+  color: var(--fontColor);
+  background-color: black;
+  height: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner img {
+  width: 35%;
+  height: 100%;
+}
+.banner .text {
+  width: 50%;
+}
+.banner .text h2 {
+  font-size: 3.5em;
+}
+.banner .text p {
+  font-size: 1.5em;
+  margin: 1em 0 2em;
+}
+.banner .text a {
+  text-decoration: none;
+  color: white;
+  background: #e50914;
+  padding: 1em 2em;
+  font-size: 1.3em;
+}
+
+.subContainer {
+  width: 100%;
+}
+.subContainer h2 {
+  font-size: 2.2em;
+  margin-bottom: 2em;
+  color: var(--fontColor);
+}
+
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.container ::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  font-size: 1.2em;
+  display: inline-flex;
+  gap: 3em;
+}
+
+.movie {
+  width: 20em;
+  background: var(--fontColor);
+  padding-bottom: 2em;
+  border-radius: 0.5em;
+}
+.movie img {
+  width: 100%;
+}
+.movie h3 {
+  padding: 1em;
+  color: #e50914;
+}
+.movie p {
+  padding: 0.5em 1em 0;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.movie h4 {
+  padding: 1em 1em 0;
+  color: #e50914;
+}
+
+.Contain {
+  background: black;
+}
+.Contain h2 {
+  color: white;
+  font-size: 2.2em;
+  margin-bottom: 2em;
+}
+
+.search-movie {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.search-movie h2 {
+  font-size: 2em;
+  margin-bottom: 2em;
+  color: var(--fontColor);
+}
+.search-movie .searcharea {
+  width: 55em;
+  height: 5em;
+  background: black;
+  border-radius: 5em;
+  position: relative;
+}
+.search-movie .searcharea form {
+  width: 100%;
+  height: 100%;
+}
+.search-movie .searcharea form i {
+  height: 100%;
+  color: gray;
+  font-size: 1.5em;
+}
+.search-movie .searcharea input {
+  background: transparent;
+  width: 90%;
+  height: 100%;
+  color: var(--fontColor);
+  padding: 0 1em;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+}
+
+.search-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+footer {
+  color: var(--fontColor);
+  text-align: center;
+  background: black;
+}
+footer p {
+  font-size: 1.3em;
+}
+
+@media (max-width: 600px) {
+  nav, .subContainer, .text, .banner, .Contain, .search-movie, footer {
+    padding: 2em 2em;
+  }
+  nav {
+    display: block;
+  }
+  nav .logopen {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .logopen img.hamburger {
+    height: 100%;
+    display: block;
+  }
+  nav .mobile {
+    background: var(--fontColor);
+    display: block;
+    padding: 3em;
+    text-align: center;
+    margin-top: 2em;
+    display: none;
+  }
+  nav .mobile ul {
+    width: 100%;
+    padding: 1.5em 0;
+  }
+  nav .mobile ul li {
+    display: block;
+    padding: 1em;
+    width: 100%;
+  }
+  nav .mobile ul li a {
+    padding: 1em 3em;
+  }
+  nav .mobile ul li :hover {
+    background: black;
+    color: var(--fontColor);
+  }
+  nav .mobile ul li a {
+    color: black;
+  }
+  nav .mobile a.cta {
+    margin-top: 2em;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .text {
+    width: 100%;
+    text-align: center;
+  }
+  .banner img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .movie {
+    width: 70vw;
+  }
+  .search-movie {
+    width: 100%;
+  }
+  .search-movie .searcharea {
+    width: 80%;
+  }
+  .search-result {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
