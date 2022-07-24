@@ -154,7 +154,7 @@ function GetDiscover() {
             
             const Showing = document.querySelector(".h2");
             Showing.innerHTML = "";
-            Showing.innerHTML = `Showing search result for "${SearchValue}"`;
+           
 
             const MovieSearch = document.querySelector(".search-movie")
         
@@ -203,6 +203,11 @@ function GetDiscover() {
             
             Container.append(ShowResult);
 
+            if(SearchResults == []) {
+                Showing.innerHTML = `No search result for "${SearchValue}"`;
+            } else {
+            Showing.innerHTML = `Showing search result for "${SearchValue}"`;
+            }
             MovieSearch.append(Showing);
             MovieSearch.append(Container)
             }

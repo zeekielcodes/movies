@@ -110,7 +110,7 @@ nav .cta {
   overflow-x: scroll;
   scrollbar-width: none;
 }
-.container ::-webkit-scrollbar {
+.container :-webkit-scrollbar {
   display: none;
 }
 
@@ -226,7 +226,6 @@ footer p {
   }
   nav .mobile {
     background: var(--fontColor);
-    display: block;
     padding: 3em;
     text-align: center;
     margin-top: 2em;
@@ -234,7 +233,7 @@ footer p {
   }
   nav .mobile ul {
     width: 100%;
-    padding: 1.5em 0;
+    padding-bottom: 1.5em;
   }
   nav .mobile ul li {
     display: block;
@@ -264,6 +263,8 @@ footer p {
   .banner img {
     -o-object-fit: contain;
        object-fit: contain;
+    -webkit-animation: animateBanner 3s 1s infinite ease-in-out;
+            animation: animateBanner 3s 1s infinite ease-in-out;
   }
   .movie {
     width: 70vw;
@@ -276,5 +277,27 @@ footer p {
   }
   .search-result {
     justify-content: center;
+  }
+}
+@-webkit-keyframes animateBanner {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes animateBanner {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
   }
 }/*# sourceMappingURL=style.css.map */
