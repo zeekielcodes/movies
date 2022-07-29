@@ -209,6 +209,10 @@ footer p {
   font-size: 1.3em;
 }
 
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   nav, .subContainer, .text, .banner, .Contain, .search-movie, footer {
     padding: 2em 4em;
