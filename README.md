@@ -1,4 +1,4 @@
-# The Face Movie App
+# The Face Movies App
 
 ### Screenshot
 
@@ -14,7 +14,7 @@
 - CSS
 - SCSS
 - JavaScript
-- The MovieDB APIe
+- The MovieDB API
 
 ## Author
 
